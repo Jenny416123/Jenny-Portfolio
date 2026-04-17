@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>马春钰 | Personal Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page" data-node-id="0:1">
+    <section class="screen hero-screen">
+      <div class="hero-inner">
+        <div class="polaroid avatar-polaroid">
+          <img src="./assets/polaroid-frame.png" alt="拍立得相框" class="hero-frame-art" />
+          <img src="./assets/image1.png" alt="马春钰个人照片" class="hero-photo" />
+        </div>
+        <div class="hero-text">
+          <p class="hello">HELLO! I AM ✧</p>
+          <h1>马春钰<br />MA CHUNYU</h1>
+          <p class="sub">南京大学英语笔译硕士（2027届）</p>
+          <div class="hero-contact" aria-label="联系方式图标">
+            <a class="contact-icon" href="mailto:chunyu.jenny@qq.com" aria-label="邮箱">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 6.5h18v11H3z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="m4.5 8 7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <span class="contact-icon" aria-label="微信">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9.2 5.2c-3.8 0-6.7 2.5-6.7 5.9 0 1.8.8 3.3 2.3 4.4l-.7 2.6 2.8-1.4c.7.2 1.5.3 2.3.3 3.7 0 6.7-2.5 6.7-5.9s-3-5.9-6.7-5.9Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M15.7 10.2c-3.1 0-5.6 2-5.6 4.8 0 1.3.6 2.5 1.7 3.3l-.5 2.1 2.2-1.1c.7.2 1.4.2 2.1.2 3.1 0 5.6-2 5.6-4.8s-2.5-4.5-5.5-4.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <circle cx="7.6" cy="10.9" r="0.8" fill="currentColor"/>
+                <circle cx="11" cy="10.9" r="0.8" fill="currentColor"/>
+                <circle cx="14.4" cy="15" r="0.8" fill="currentColor"/>
+                <circle cx="17.7" cy="15" r="0.8" fill="currentColor"/>
+              </svg>
+            </span>
+          </div>
+          <span class="star">✧</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen journey-screen">
+      <h2 class="edu-title">EDUCATION</h2>
+      <p class="edu-note edu-left">
+        南京大学 | 英语笔译硕士（2024.09 - 2027.06）<br />
+        南开大学 | 翻译（本科）
+      </p>
+      <h2 class="intern-title">INTERSHIP</h2>
+      <p class="edu-note intern-note-right">
+        Momenta 企业文化（2025.12 - 2026.03）<br />
+        扇贝 APP 内容运营（2025.06 - 2025.09）<br />
+        商务部国际官员研修学院项目助理（2023.10 - 2023.11）
+      </p>
+
+      <div class="education-polaroids">
+        <div class="polaroid edu-card edu-card-1"><div class="photo-slot"></div></div>
+        <div class="polaroid edu-card edu-card-2"><div class="photo-slot"></div></div>
+        <div class="polaroid edu-card edu-card-3"><div class="photo-slot"></div></div>
+        <div class="polaroid edu-card edu-card-4"><div class="photo-slot"></div></div>
+      </div>
+
+      <img class="journey-collage" src="./assets/frame-2.png" alt="相纸布局占位图" />
+    </section>
+
+    <section class="screen work-screen">
+      <div class="work-left">
+        <h2>VIEW MY<br />WORK</h2>
+        <div class="wheel-wrap" id="wheelWrap" aria-label="颜色选择">
+          <div class="color-wheel" id="colorWheel">
+            <button class="wheel-knob" id="wheelKnob" aria-label="颜色拖动点"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-grid" id="workGrid">
+        <button class="work-paper" data-title="作品 01"><span class="work-placeholder"></span></button>
+        <button class="work-paper" data-title="作品 02"><span class="work-placeholder"></span></button>
+        <button class="work-paper" data-title="作品 03"><span class="work-placeholder"></span></button>
+        <button class="work-paper" data-title="作品 04"><span class="work-placeholder"></span></button>
+        <button class="work-paper" data-title="作品 05"><span class="work-placeholder"></span></button>
+        <button class="work-paper" data-title="作品 06"><span class="work-placeholder"></span></button>
+      </div>
+    </section>
+
+    <section class="screen chat-screen">
+      <div class="chat-shell">
+        <h2>DIGITAL AVATAR</h2>
+        <div class="chat-container">
+          <div id="chatLog" class="chat-log" aria-live="polite">
+            <div class="bubble bot">你好，我是马春钰的数字分身，欢迎提问。</div>
+          </div>
+          <form class="chat-form" id="chatForm">
+            <input id="chatInput" type="text" maxlength="120" placeholder="输入问题，例如：你最近在做什么？" required />
+            <button type="submit">发送</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="image-modal" id="imageModal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="关闭">×</button>
+    <div class="modal-paper"><div class="work-placeholder"></div></div>
+    <p id="modalCaption"></p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
